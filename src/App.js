@@ -1,13 +1,12 @@
-import './App.css';
-import { useDispatch, useSelector} from "react-redux"
-function App() {
+import ProductsList from './components/ProductsList/ProductsList';
+import Header from './components/Header/Header';
 
+const App = () => {
 
-  const products = useSelector(state => state.products);
-  console.log(products);
   return (
     <div className="App">
-     
+     <Header/> 
+     <ProductsList />
     </div>
   );
 }

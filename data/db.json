@@ -1,8 +1,65 @@
 {
-    "products":[
+    "products": [
         {
             "id": 1,
-            "imageUrl": "some url here",
+            "imageUrl": "https://picsum.photos/id/26/200/300",
+            "name": "Product name",
+            "count": 4,
+            "size": {
+                "width": 200,
+                "height": 200
+            },
+            "weight": "200g",
+            "comments": [
+                {
+                    "id": 3,
+                    "productId": 1,
+                    "description": "some text here",
+                    "date": "14:00 22.08.2021"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "imageUrl": "https://picsum.photos/id/29/200/300",
+            "name": "Product name",
+            "count": 4,
+            "size": {
+                "width": 200,
+                "height": 200
+            },
+            "weight": "200g",
+            "comments": [
+                {
+                    "id": 3,
+                    "productId": 1,
+                    "description": "some text here",
+                    "date": "14:00 22.08.2021"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://picsum.photos/id/30/200/300",
+            "name": "Product name",
+            "count": 4,
+            "size": {
+                "width": 200,
+                "height": 200
+            },
+            "weight": "200g",
+            "comments": [
+                {
+                    "id": 3,
+                    "productId": 1,
+                    "description": "some text here",
+                    "date": "14:00 22.08.2021"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "imageUrl": "https://picsum.photos/id/35/200/300",
             "name": "Product name",
             "count": 4,
             "size": {
