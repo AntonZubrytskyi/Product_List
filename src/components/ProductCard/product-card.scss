@@ -1,6 +1,21 @@
-.product-card{
-
-}
-.product-title{
-    
+.product {
+    margin: 15px;
+    &__title{
+        color:rgb(17, 9, 9);
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 25px;
+        text-transform:uppercase;
+        background-color: rgb(183, 183, 183);
+    }
+    &__img {
+        display: block;
+        width: 315px;
+        height: 350px;
+        cursor: pointer;
+    }
+    &__btn{
+      margin-top: 5px;
+      text-align: center;
+    }
 }

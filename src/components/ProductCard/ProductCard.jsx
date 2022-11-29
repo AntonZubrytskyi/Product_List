@@ -1,20 +1,25 @@
 import React from 'react'
-import { useDispatch } from "react-redux";
-import { deleteProductById } from "../../services/products.service"
+import { Link } from 'react-router-dom';
+import "./product-card.scss"
+import Button from '../../UI/Button/Button';
 
-const ProductCard = ({ product }) => {
-  
-  const dispatch = useDispatch()
 
-  const removeProduct = (id) => {
-  dispatch(deleteProductById(id))
+
+const ProductCard = ({ product, toggleDeleteModal, getId }) => {
+
+  const showDetails = () => {
+    console.log(product.id)
   }
-  console.log(product.id)
+
   return (
-    <div className='product-card' >
-      <h3 className='product-title'>{product.name}</h3>
-      <img src={product.imageUrl} alt="Logo" />
-      <button onClick={removeProduct(product.id)}>Delete</button>
+    <div className='product' >
+      <p className='product__title'>{product.name}</p>
+      <Link to={`/details/${product.id}`} state={product}>
+        <img className='product__img' src={product.image} alt="Logo" onClick={() => getId(product.id)} />
+      </Link>
+      <div className='product__btn'>
+        <Button className='del-btn' onClick={() => { toggleDeleteModal(); getId(product.id) }}>Delete</Button>
+      </div>
     </div>
   )
 }

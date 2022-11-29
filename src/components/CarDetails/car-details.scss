@@ -1,0 +1,98 @@
+.details {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 600px;
+    background-color: rgb(248, 249, 255);
+    border: 5px solid rgba(27, 18, 163, 0.676);
+    border-radius: 10px;
+    height: fit-content;
+    margin-top: 20px;
+    &__header {
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+        button {
+            position: absolute;
+            top: 18px;
+            right: 40px;
+        }
+    }
+    &__container {
+        ul {
+            position: relative;
+            width: 100%;
+            left: 45%;
+            transform: translate(-50%);
+        }
+        ul li {
+            span {
+                color: rgb(0, 0, 0);
+            }
+            list-style: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(66, 47, 152);
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 5px;
+            &:hover {
+                background-color: rgb(206, 167, 242);
+            }
+        }
+    }
+    &__comments {
+        position: relative;
+        h2 {
+            text-align: center;
+        }
+        .btn-wrapper {
+            button {
+                position: absolute;
+                top: 1px;
+                right: 15px;
+            }
+        }
+        ul {
+            position: relative;
+            width: 100%;
+            left: 45%;
+            transform: translate(-50%);
+            button {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                margin-bottom: 20px;
+            }
+        }
+        ul li {
+            position: relative;
+            overflow: auto;
+            list-style: none;
+            width: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(0, 0, 0);
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 5px;
+            height: fit-content;
+            p {
+                word-break: break-all;
+                margin: 5px;
+            }
+            h4 {
+                text-align: center;
+            }
+            &:hover {
+                background-color: rgb(206, 167, 242);
+            }
+        }
+    }
+}
